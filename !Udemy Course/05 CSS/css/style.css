@@ -1,0 +1,12 @@
+div {
+}
+
+p {
+  border: 3px solid black;
+  width: 40%;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding: 20px 40px 10px 20px;
+}
