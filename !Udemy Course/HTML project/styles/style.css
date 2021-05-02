@@ -72,7 +72,7 @@ h1 {
 }
 
 #header-title {
-  max-width: 50%;
+  max-width: 45%;
   margin-left: 8.33%;
   background: #fff;
   padding: 15px;
@@ -91,4 +91,41 @@ h1 {
   margin-left: 8.33%;
   background: #fff;
   padding: 15px;
+}
+
+#logo-text {
+  float: left;
+  margin-left: 30px;
+  font-size: 0.8em;
+}
+
+#logo-text a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #171717;
+  letter-spacing: 8px;
+}
+
+#main-nav {
+  float: right;
+  list-style: none;
+}
+
+#main-nav li {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 0.8em;
+}
+
+#main-nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #171717;
+  letter-spacing: 4px;
+}
+
+nav {
+  background: #fff;
+  height: 70px;
+  padding: 25px;
 }
