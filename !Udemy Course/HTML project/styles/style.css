@@ -72,7 +72,7 @@ h1 {
 }
 
 #header-title {
-  max-width: 45%;
+  max-width: 50%;
   margin-left: 8.33%;
   background: #fff;
   padding: 15px;
@@ -86,7 +86,7 @@ h1 {
 }
 
 #header-headline {
-  max-width: 33.33%;
+  max-width: 45%;
   margin-top: 20px;
   margin-left: 8.33%;
   background: #fff;
