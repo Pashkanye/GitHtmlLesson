@@ -1,3 +1,7 @@
+/**********************************
+Common styles
+***********************************/
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +10,7 @@
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
-  border: 1px solid red;
+  padding: 3%;
 }
 
 .col-1 {
@@ -56,15 +59,46 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #e93c2a;
+  content: "";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+section {
+  padding: 100px 0px;
+}
+
+/**********************************
+Header styles
+***********************************/
+
 header {
-  background-image: url(../images/header-background-image.jpg);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(100, 100, 100, 0.1)
+    ),
+    url(../images/header-background-image.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
-}
-
-h1 {
-  margin: 0px;
 }
 
 .header-text {
@@ -72,10 +106,10 @@ h1 {
 }
 
 #header-title {
-  max-width: 50%;
+  max-width: 35%;
   margin-left: 8.33%;
-  background: #fff;
-  padding: 15px;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 15px 30px;
   text-transform: uppercase;
   color: #171717;
   letter-spacing: 0.17em;
@@ -83,14 +117,13 @@ h1 {
   line-height: 1em;
   font-weight: 400;
   font-style: normal;
+  border-radius: 100px;
 }
 
-#header-headline {
-  max-width: 45%;
+#header-buttons {
   margin-top: 20px;
   margin-left: 8.33%;
-  background: #fff;
-  padding: 15px;
+  padding: 15px 0px;
 }
 
 #logo-text {
@@ -104,6 +137,13 @@ h1 {
   text-transform: uppercase;
   color: #171717;
   letter-spacing: 8px;
+}
+
+#logo-image {
+  height: 70px;
+  width: auto;
+  float: left;
+  margin-left: 15px;
 }
 
 #main-nav {
@@ -128,4 +168,74 @@ nav {
   background: #fff;
   height: 70px;
   padding: 25px;
+}
+
+/**********************************
+Button styles
+***********************************/
+
+.button:link,
+.button:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #e93c2a;
+  background: #fff;
+  border-radius: 150px;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.button-order:link,
+.button-order:visited {
+  color: #fff;
+  background: #e93c2a;
+  border: 1px solid #e93c2a;
+}
+
+.button-order:hover {
+  color: #fff;
+  background: #ac2012;
+  border: 1px solid #ac2012;
+}
+
+.button-order:active {
+  color: #fff;
+  background: #7e180d;
+  border: 1px solid #7e180d;
+}
+
+.button-more:link,
+.button-more:visited {
+  border: 1px solid #e93c2a;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.button-more:hover {
+  border: 1px solid #e93c2a;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.button-more:active {
+  border: 1px solid #e93c2a;
+  background: rgba(255, 255, 255, 1);
+}
+
+/**********************************
+Features Styles
+***********************************/
+
+#headline-text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 100%;
+}
+
+#features-icon {
+  font-size: 64px;
+  color: #e93c2a;
+}
+
+section p {
+  font-size: 90%;
 }

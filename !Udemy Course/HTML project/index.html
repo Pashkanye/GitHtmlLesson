@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">      
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/ionicons.min.css">
 
     <title>Океан суши</title>
 
@@ -16,9 +17,11 @@
 
     <header>
 
+        <img src="images/logo.png" id="logo-image">
+
         <nav>
 
-            <p id="logo-text"><a href="#">Rustam sushi</a></p>
+            <p id="logo-text"><a href="#">Pasheps sushi</a></p>
 
             <ul id="main-nav">
                 <li><a href="#">Главная</a></li>
@@ -32,14 +35,65 @@
 
         <div class="header-text">
 
-            <h1 id="header-title">Суши Узумаки</h1>
+            <h1 id="header-title">Мы открылись!</h1>
 
-            <p id="header-headline">Для доставки/самовывоза, звоните +375(29) 777-77-77</p>
+            <div id="header-buttons">
+                <a href="#" class="button button-order">Сделать заказ</a>
+                <a href="#" class="button button-more">Узнать больше</a>
+            </div>
 
         </div>
 
     </header>
 
+    <section>
+
+        <div>
+
+            <h2>Уникальные блюда</h2>
+            <p id="headline-text">Каждое блюдо - это изысканное блюдо от наших суши-поваров. Всё из самых свежих ингридиентов</p>
+
+        </div>
+
+        <div class="col-3">
+
+            <ion-icon id="features-icon" name="restaurant"></ion-icon>
+            <p>
+                С 2001 года «Pasheps Sushi» предлагает ряд новаторских подходов к классическим блюдам японской кухни. Деликатесы варьируются от множества ароматных закусок, первоклассных суши и сашими до знаменитых «Rockin 'Sushi».
+            </p>
+
+        </div>
+
+        <div class="col-3">
+
+            <ion-icon id="features-icon" name="tv"></ion-icon>
+            <p>
+                Pasheps Sushi был показан в новостях Channel 7 как один из «лучших ресторанов в Studio City». Кроме того, «Pasheps Sushi» известен как «местом встречи знаменитостей», и о нем писали в различных журналах.
+            </p>
+
+        </div>
+
+        <div class="col-3">
+
+            <ion-icon id="features-icon" name="people"></ion-icon>
+            <p>
+                На обед это отличное место, чтобы перекусить или просто расслабиться и пообщаться с друзьями.
+            </p>
+
+        </div>
+
+        <div class="col-3">
+
+            <ion-icon id="features-icon" name="football"></ion-icon>
+            <p>
+                На ужин это модная, веселая и шумная обстановка, в которой можно провести предварительную игру с друзьями перед тем, как провести вечер. Мы также занимаемся всеми вашими любимыми видами спорта с помощью наших 3 телевизоров высокой четкости с большим экраном.
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>
