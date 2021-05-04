@@ -85,6 +85,7 @@ h2::after {
 
 section {
   padding: 80px 0px;
+  clear: both;
 }
 
 /**********************************
@@ -158,19 +159,27 @@ header {
   font-size: 0.8em;
 }
 
-#main-nav li a:link, 
+#main-nav li a:link,
 #main-nav li a:visited {
   text-decoration: none;
   text-transform: uppercase;
   color: #171717;
   letter-spacing: 4px;
+  padding: 10px 10px;
 }
 
 #main-nav li a:hover {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ff1900;
-  letter-spacing: 4px;
+  background: #e93c2a;
+  color: #fff;
+  border-radius: 50px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#main-nav li a:active {
+  background: #e93c2a;
+  color: #fff;
+  border-radius: 13px;
+  transition: border-radius 0.1s;
 }
 
 nav {
@@ -236,7 +245,7 @@ Features Styles
 
 #headline-text {
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 20px;
   font-size: 100%;
 }
@@ -250,15 +259,93 @@ Features Styles
 
 section p {
   font-size: 90%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #info-column {
-  color: #fff;
   text-align: justify;
-  vertical-align: bottom;
-  background:#e93c2a;
   padding: 20px 20px;
-  border-radius: 25px;
-  height: 320px;
 }
+
+/**********************************
+Food Images Styles
+***********************************/
+
+.images-container {
+  list-style: none;
+  width: 100%;
+}
+
+.images-container li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.food-image {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.food-image img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.2);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.food-image img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+/**********************************
+How To Order Styles
+***********************************/
+
+#phone-image {
+  width: 100%;
+}
+
+#phone-image-container {
+  margin-left: 10%;
+  margin-right: 6.65%;
+}
+
+.order-step {
+  margin-top: 150px;
+}
+
+.order-step div {
+  color: #e93c2a;
+  border: 1px solid #e93c2a;
+  width: 50px;
+  height: 50px;
+  border-radius: 150px;
+  text-align: center;
+  padding: 7px;
+  font-size: 150%;
+  /* display: inline-block; */
+  float: left;
+  margin-right: 20px;
+}
+
+.order-step p {
+  padding-top: 0px;
+  font-size: 150%;
+}
+
+.order-step:last-of-type {
+  margin-bottom: 100px;
+}
+
+.app-button img {
+  height: 70px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/**********************************
+
+***********************************/
