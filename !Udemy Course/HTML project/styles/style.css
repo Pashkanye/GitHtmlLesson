@@ -83,9 +83,38 @@ h2::after {
   margin-top: 30px;
 }
 
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-align: center;
+  font-size: 80%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 section {
   padding: 80px 0px;
   clear: both;
+}
+
+.centered-horizontally {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.float-clearing {
+  zoom: 1;
+}
+
+.float-clearing::after {
+  zoom: 1;
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 /**********************************
@@ -165,7 +194,7 @@ header {
   text-transform: uppercase;
   color: #171717;
   letter-spacing: 4px;
-  padding: 10px 10px;
+  padding: 10px 15px;
 }
 
 #main-nav li a:hover {
@@ -176,10 +205,8 @@ header {
 }
 
 #main-nav li a:active {
-  background: #e93c2a;
-  color: #fff;
-  border-radius: 13px;
-  transition: border-radius 0.1s;
+  background: #da2917;
+  transition: background 0.1s;
 }
 
 nav {
@@ -344,6 +371,32 @@ How To Order Styles
   height: 70px;
   width: auto;
   margin-right: 10px;
+}
+
+/**********************************
+Cities Styles
+***********************************/
+
+.col-3 img {
+  width: 100%;
+}
+
+#cities-section {
+  background: #eee;
+}
+
+.city-info {
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  font-size: 80%;
+}
+
+.info-icon {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  color: #e93c2a;
 }
 
 /**********************************
